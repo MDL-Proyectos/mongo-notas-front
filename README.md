@@ -6,8 +6,10 @@ Frontend para la aplicación MongoNotas, un proyecto universitario que demuestra
 ### 🔧 Tecnologías Utilizadas
 - JavaScript
 - HTML/CSS
+- React
 - Integración con API REST
 - Docker
+- Vite
 
 ## 🚀 Características
 - Interfaz de usuario para gestión de notas
