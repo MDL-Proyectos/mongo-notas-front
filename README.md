@@ -49,5 +49,5 @@ Este proyecto fue desarrollado como parte de un trabajo universitario con el obj
 > **Nota**: Al ser un proyecto académico, se centra en demostrar la implementación básica de estas tecnologías. No incluye características avanzadas como logging extensivo o validaciones complejas.
 
 ## 🔗 Proyectos Relacionados
-- [Backend de MongoNotas](https://github.com/MDL-Proyectos/mongo-notas) - API REST desarrollada con Express
+- [Backend de MongoNotas](https://github.com/MDL-Proyectos/mongo_notas) - API REST desarrollada con Express
 
