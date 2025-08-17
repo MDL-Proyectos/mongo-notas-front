@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# MongoNotas Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción
+Frontend para la aplicación MongoNotas, un proyecto universitario que demuestra la integración de diferentes tecnologías web modernas. Este repositorio forma parte de un proyecto más amplio que incluye un backend separado, mostrando una arquitectura de microservicios.
 
-Currently, two official plugins are available:
+### 🔧 Tecnologías Utilizadas
+- JavaScript
+- HTML/CSS
+- Integración con API REST
+- Docker
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
+- Interfaz de usuario para gestión de notas
+- Comunicación con backend basado en Express
+- Integración con MongoDB para almacenamiento de datos
+- Containerización con Docker
 
-## Expanding the ESLint configuration
+## ⚙️ Requisitos Previos
+- Node.js
+- Docker
+- Conexión al backend de MongoNotas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Instalación y Configuración
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/MDL-Proyectos/mongo-notas-front.git
+cd mongo-notas-front
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Instalar dependencias:
+```bash
+npm install
 ```
+
+3. Iniciar con Docker:
+```bash
+docker build -t mongo-notas-frontend .
+docker run -p 3000:3000 mongo-notas-frontend
+```
+
+## 🎯 Contexto del Proyecto
+Este proyecto fue desarrollado como parte de un trabajo universitario con el objetivo de demostrar conocimientos en:
+- Desarrollo Frontend con JavaScript
+- Integración con Backend (Express)
+- Bases de datos NoSQL (MongoDB)
+- Containerización (Docker)
+
+> **Nota**: Al ser un proyecto académico, se centra en demostrar la implementación básica de estas tecnologías. No incluye características avanzadas como logging extensivo o validaciones complejas.
+
+## 🔗 Proyectos Relacionados
+- [Backend de MongoNotas](https://github.com/MDL-Proyectos/mongo-notas) - API REST desarrollada con Express
+
